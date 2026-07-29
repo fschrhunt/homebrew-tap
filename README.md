@@ -1,6 +1,18 @@
 # Fschrhunt Tap
 
-## How do I install these formulae?
+## Install Workframe
+
+```sh
+brew install fschrhunt/tap/workframe
+```
+
+Upgrade it later with:
+
+```sh
+brew upgrade workframe
+```
+
+## How do I install other formulae?
 
 `brew install fschrhunt/tap/<formula>`
 
