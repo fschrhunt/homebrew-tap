@@ -5,6 +5,13 @@ class Vole < Formula
   sha256 "1301647e426275e1d642d74a64d530e4b3938a602e724314338b59868a4cda9e"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/fschrhunt/homebrew-tap/releases/download/vole-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "13cd107cd0dd22283dff0b6cab96cee18281f8bc76da886398655d56b2ae20e7"
+    sha256 cellar: :any_skip_relocation, sequoia:      "a283cfe3a4972d818849324ad108b5f9d4e766ad02258b59f388902663487a37"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "67234ca53e482b831e5e14ee510ab3e21608191f85840c0f7730c06c4d538763"
+  end
+
   def install
     # vole resolves its own directory with `readlink -f "${BASH_SOURCE[0]}"`,
     # so the symlinks below land it in libexec and it finds bin/ and lib/
