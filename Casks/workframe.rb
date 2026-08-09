@@ -1,6 +1,6 @@
 cask "workframe" do
-  version "1.5.1"
-  sha256 "2e8b4188188396882a2a2c448be1c48533a3ff0a5d0214dbf4a50589f8907d0e"
+  version "1.5.2"
+  sha256 "6be2b3501bd6e0f6b01d6691d2a01180c39d87dba116a875b164f42bf8c6e82b"
 
   url "https://github.com/fschrhunt/workframe/releases/download/v#{version}/Workframe-#{version}.zip"
   name "Workframe"
