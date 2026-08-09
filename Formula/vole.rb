@@ -37,8 +37,13 @@ class Vole < Formula
 
     # libexec wiring: `help` only renders if lib/core/*.sh got sourced.
     assert_match "vole upgrade", shell_output("#{bin}/vole help")
-    assert_match "Available tasks:", shell_output("#{bin}/vole optimize --list")
-    assert_match "broken_prefs", shell_output("#{bin}/vole optimize --list")
+    # Assert on task keys the registry defines on BOTH platforms. The macOS
+    # and Linux task lists are almost entirely different, so a key like
+    # broken_prefs (macOS-only) passes locally and fails the Linux bottle.
+    tasks = shell_output("#{bin}/vole optimize --list")
+    assert_match "Available tasks:", tasks
+    assert_match "database_vacuum", tasks
+    assert_match "disk_health", tasks
 
     # The update/upgrade split, including the guard that catches the old
     # pre-0.2.0 invocation instead of silently doing something else.
