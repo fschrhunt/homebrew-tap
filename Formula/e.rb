@@ -1,28 +1,28 @@
 class E < Formula
   desc "Coding agent for your terminal"
   homepage "https://github.com/fschrhunt/e"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/fschrhunt/e/releases/download/v#{version}/e-aarch64-apple-darwin.tar.gz"
-      sha256 "1cb983e725be50534750886d19a6f72d85aaa0389eb3fbb5b65ac4e4a2a580ca"
+      sha256 "771c448ec8ebdbddbef6a6fac1709e1a55e04ae5b2100a1b0b491cebb109dd1b"
     end
     on_intel do
       url "https://github.com/fschrhunt/e/releases/download/v#{version}/e-x86_64-apple-darwin.tar.gz"
-      sha256 "5c6639a8df7c84f8f7f6429ee564eab8a84c5c038423a76d48c1302f85d42a27"
+      sha256 "0a9ef5d32df95ebeed1d7f4784ede3bb651b26545a61f6464a55b4d78ffd57e5"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/fschrhunt/e/releases/download/v#{version}/e-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "28e4b2b17ce6efff71aa14f962dd47bb9e7088245b1d68d65183cf8a63db830d"
+      sha256 "bfc8d803fbdf847b1d7dbe3337646c24f0bc7d8d63bc137ca1717046b1f4cd48"
     end
     on_intel do
       url "https://github.com/fschrhunt/e/releases/download/v#{version}/e-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5166941de7db7a32d94790bd31d6b6470aba3f7df1d57210b9c7c28f057615e4"
+      sha256 "343136ae4db20e795e77311a106e9cd017e296dcbad8f7b5b767307a65363664"
     end
   end
 
