@@ -1,30 +1,11 @@
-# Fschrhunt Tap
+# fschrhunt/tap
 
-## Install Workframe
-
-```sh
-brew install fschrhunt/tap/workframe
-```
-
-Upgrade it later with:
+## Install e
 
 ```sh
-brew upgrade workframe
+brew install fschrhunt/tap/e
 ```
 
-## How do I install other formulae?
+Upgrade later with `brew upgrade e`.
 
-`brew install fschrhunt/tap/<formula>`
-
-Or `brew tap fschrhunt/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "fschrhunt/tap"
-brew "<formula>"
-```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+e — a coding agent for your terminal: https://github.com/fschrhunt/e
